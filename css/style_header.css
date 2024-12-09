@@ -1,0 +1,42 @@
+header{
+    background-color: orange;
+}
+.cabezera{
+    padding-left: 33%;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 33%;
+}
+.cabezera hr{
+    width: 5%;
+    height: 5px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+}
+.cabezera p{
+    padding-bottom: 5%;
+}
+.cabezera a{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 1);
+    width: 250px;
+    height: 70px;
+    border-radius: 15px; /* Bordes redondeados, pero menos exagerados */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave para fondo y sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave debajo del botón */
+    border: none; /* Eliminar cualquier borde visible */
+    font-weight: bold; /* Letra un poco más destacada */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: large;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px;
+    transform: translate(-50%, -50%); /* Ajusta la posición al centro exacto */
+}
+.cabezera a:hover{
+    background-color: rgb(179, 179, 179);
+    color: white;
+}

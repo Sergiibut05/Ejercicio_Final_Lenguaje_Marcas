@@ -1,0 +1,176 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  
+  justify-content: center;
+  align-items: center;
+}
+h1,h2,h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+.nav {
+    background-color: rgba(3, 3, 3, 0.5); /* Color de fondo oscuro */
+    padding: 10px 0; /* Espaciado vertical */
+    position: fixed;
+    width: 100%;
+    z-index: 10; /* Asegura que esté encima */
+  }
+  
+  .navbar {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Centra la lista horizontalmente */
+    align-items: center;
+    padding-inline: 20px;
+    
+  }
+  .navbar img{
+    width: 150px;
+    height: 75px;
+  }
+  
+  .navbar ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Hace la lista horizontal */
+    gap: 20px; /* Espaciado entre los elementos */
+  }
+  .navbar ul a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de hover suave */
+    display: inline-flex;
+  }
+  
+  .navbar ul a:hover {
+    background-color: #555; /* Fondo al pasar el ratón */
+    color: orange;
+  }
+  /* Contenedor del video */
+.video-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Asegura que el video no se salga del contenedor */
+    z-index: -1; /* Envía el video al fondo */
+  }
+  /* Estilo del video */
+  .video-background video {
+    width: 100%; /* Asegura que el video cubra todo el ancho */
+    height: 100vh; /* Asegura que el video cubra toda la altura */
+    object-fit: cover; /* Recorta el video para que se ajuste al contenedor */
+    
+  }
+  /*Parte de Encima del video*/
+  .inicio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajusta la posición al centro exacto */
+    z-index: 1;
+  }
+  .inicio h1{
+    color: #fff;
+  }
+  .inicio .boton{
+    padding-top: 40%;
+  }
+  .inicio .boton a{
+    padding: 20px 40px;
+    color: white;
+    background-color: rgba(52, 48, 48, 0.7);
+    border-radius: 15px; /* Bordes redondeados, pero menos exagerados */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave para fondo y sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave debajo del botón */
+    border: none; /* Eliminar cualquier borde visible */
+    font-weight: bold; /* Letra un poco más destacada */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: large;
+    text-decoration: none;
+  }
+  .inicio .boton a:hover{
+    background-color: rgba(198, 109, 35, 0.7);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5); /* Aumenta ligeramente la sombra */
+    transform: translateY(-2px);
+  }
+  /*Sección 2*/
+  .section2{
+    background-color: #555;
+  }
+  iframe{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  
+  
+/* Footer */
+footer {
+  margin: 0;
+  background-color: #333;
+  background-image: url('img/map-image.png'); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  color: white;
+  padding: 20px;
+  min-height: 150px; /* Altura mínima visible */
+  clear: both; /* Asegura que no se superponga a elementos flotantes */
+}
+footer .information{
+  float: left;
+}
+footer .information ol li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer ol{
+  list-style: decimal; /* Conservamos el estilo de números */
+  padding-left: 20px; /* Ajustamos el espacio general */
+}
+footer .social-table{
+  float: right;
+}
+/* Estilo para centrar la tabla */
+footer .social-table {
+  margin: 20px auto; /* Centrar la tabla horizontalmente */
+  border-collapse: collapse; /* Elimina los bordes duplicados */
+  
+}
+footer .social-table td {
+  padding: 10px; /* Espaciado interno entre la imagen y los bordes de la celda */
+  text-align: center; /* Centrar contenido dentro de las celdas */
+  background-color: #fff;
+  border-radius: 8px;
+}
+ /* Estilo para las imágenes de redes sociales */
+footer.social-table img {
+  width: 50px; /* Ajusta el tamaño de las imágenes */
+  height: 50px;
+  border-radius: 50%; /* Hace las imágenes redondas */
+  transition: transform 0.3s ease; /* Animación de zoom al pasar el mouse */
+}
+
+footer .social-table img:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+footer .social-table, footer .social-table td {
+  border: 2px solid #000; /* Bordes negros de 2px */
+}
+footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}

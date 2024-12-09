@@ -1,0 +1,30 @@
+.ilustraciones img{
+    margin: 0 auto; /* Centra la foto en el centro de la página */
+  }
+  .gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos bajen de línea si no caben */
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto; /* Asegura que esté centrado dentro del body */
+    padding-bottom: 5%;
+  }
+  
+  .galery-item{
+    width: 23%;
+    position: relative; /* Necesario para el cuadrado perfecto */
+    overflow: hidden; /* Oculta el exceso de imagen al hacer zoom */
+    padding-top: 5%; /* Mantiene una proporción cuadrada */
+    
+  }
+  .galery-image{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Animación suave para el hover */
+    
+  }
+  .galery-item:hover .galery-image {
+    transform: scale(1.1); /* Agranda la imagen al pasar el ratón */
+  }
+  
