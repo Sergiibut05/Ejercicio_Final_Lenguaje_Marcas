@@ -34,7 +34,7 @@ h1,h2,h3{
     
   }
   .navbar img{
-    width: 150px;
+    width: 120px;
     height: 75px;
   }
   
@@ -109,13 +109,13 @@ h1,h2,h3{
   /*Sección 2*/
   .section2{
     background-color: #555;
+    
   }
   iframe{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    width: 90%;
   }
-  
-  
 /* Footer */
 footer {
   margin: 0;
